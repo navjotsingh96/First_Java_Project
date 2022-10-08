@@ -11,7 +11,7 @@ public class Main {
     static Integer tries = 0;
     static JFrame frame = new JFrame("Guess the Number");
 
-    static JLabel text = new JLabel("Geben eine Zahl ein!");
+    static JLabel text = new JLabel("Gib ein Zahl ein!");
     static JTextField textField = new JTextField();
     static JButton button = new JButton("Raten!");
 
@@ -76,9 +76,9 @@ public class Main {
             tries++;
             textField.setBorder(new LineBorder(Color.RED));
             if(number < myNUmber){
-                text.setText("False getaren! Die Zahl is klein");
+                text.setText("Falsch getaren! Die Zahl is zu klein");
             } else {
-                text.setText("False getaren! Die Zahl is groß");
+                text.setText("Falsch getaren! Die Zahl is zu groß");
             }
             textField.setText("");
            // nextRound();
